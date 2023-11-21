@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${imie}"></p>
+<p>Wszystkie imiona: </p>
+<p th:each="jednoImie : ${imiona}" th:text="${jednoImie}"></p>
+<p th:if="${imie == 'Zbyszek'}">Wylosowal sie Zbyszek !!!</p>
+<p th:if="${imie != 'Zbyszek'}">Nie wylosowal sie Zbyszek !!!</p>
+<p th:text="${'Ilosc imion: ' + imiona.size()}"></p>
+<p><th:block th:each="jednoImie : ${imiona}" th:text="${jednoImie + ' '}"></th:block></p>
+<div>
+  asdhfg
+  asdkjhfg
+  asdlfhigks
+</div>
+</body>
+</html>
